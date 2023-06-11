@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | EdgeLedger | Top Financial Service Provider</title>
+  <link rel="shortcut icon" href="img/Cherry-Cake.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/utility.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <header id="main-header">
+    <div class="navbar transp">
+      <h1 class="logo">
+        <a href="index.html">
+          <span class="text-primary"><i class="fa-brands fa-gg-circle"></i> Edge</span>Ledger
+        </a>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#cases">Cases</a></li>
+          <li><a href="index.html#blog">Blog</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <div id="home" class="content">
+      <h1>Successfully sent.</h1>
+      <!-- <p>We provide world class financial assistance.</p> -->
+      <!-- <a href="blog.html" class="btn"><i class="fas fa-chevron-right"></i> Read More</a> -->
+    </div>
+  </header>
+
+
+  <footer class="my-footer bg-dark">
+    <div>
+      <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <p>Copyright &#169; 2023, Fazlay Rabbi</p>
+  </footer>
+
+
+  <script src="https://kit.fontawesome.com/1ac617dbbe.js" crossorigin="anonymous"></script>
+  <script>
+    const navbar = document.getElementsByClassName('navbar')[0];
+    let scrolled = true;
+
+    onscroll = () => {
+      if(pageYOffset > 100) {
+        navbar.classList.remove('transp');
+        if(scrolled) {
+          navbar.style.transform = 'translateY(-75px)';
+        }
+        setTimeout(() => {
+          navbar.style.transform = 'translateY(0)';
+          scrolled = false;
+        }, 300)
+      }
+      else {
+        navbar.classList.add('transp');
+        scrolled = true;
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+

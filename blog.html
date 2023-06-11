@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | EdgeLedger | Top Financial Service Provider</title>
+  <link rel="shortcut icon" href="img/Cherry-Cake.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/utility.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <header id="main-header" class="blog">
+    <div class="navbar">
+      <h1 class="logo">
+        <a href="index.html">
+          <span class="text-primary"><i class="fa-brands fa-gg-circle"></i> Edge</span>Ledger
+        </a>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#cases">Cases</a></li>
+          <li><a href="index.html#blog">Blog</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <div id="home" class="content">
+      <h1>Blog</h1>
+    </div>
+  </header>
+
+  <section id="blog" class="section-4 blog">
+    <div class="item-1">
+      <img src="img/blog/blog1.jpg" alt="blog image">
+    </div>
+    <div class="item-2 bg-light box">
+      <div>
+        <h1 class="lg-heading">Importance of green sky</h1>
+        <p>
+          <i class="fas fa-user"></i>
+          Posted by <strong>Rahim Mia</strong> | 10th June 2023
+        </p>
+        <p class="blog-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro culpa voluptates vel numquam obcaecati temporibus, eligendi corporis quisquam incidunt tenetur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, hic.</p>
+        <a class="btn" href="blog1.html">Read More</a>
+      </div>  
+    </div>
+  </section>
+
+  <section id="blog" class="section-4 blog">
+    <div class="item-1">
+      <img src="img/blog/blog2.jpg" alt="home image">
+    </div>
+    <div class="item-2 bg-dark box">
+      <div>
+        <h1 class="lg-heading">Learning Business</h1>
+        <p>
+          <i class="fas fa-user"></i>
+          Posted by <strong>Rukaiya</strong> | 6th June 2023
+        </p>
+        <p class="blog-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro culpa voluptates vel numquam obcaecati temporibus, eligendi corporis quisquam incidunt tenetur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, hic.</p>
+        <a class="btn btn-outline" href="blog1.html">Read More</a>
+      </div>  
+    </div>
+  </section>
+
+  <section id="blog" class="section-4 blog">
+    <div class="item-1">
+      <img src="img/blog/blog3.jpg" alt="home image">
+    </div>
+    <div class="item-2 bg-light box">
+      <div>
+        <h1 class="lg-heading">Stock Market</h1>
+        <p>
+          <i class="fas fa-user"></i>
+          Posted by <strong>Karim</strong> | 2nd June 2023
+        </p>
+        <p class="blog-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro culpa voluptates vel numquam obcaecati temporibus, eligendi corporis quisquam incidunt tenetur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, hic.</p>
+        <a class="btn" href="blog1.html">Read More</a>
+      </div>  
+    </div>
+  </section>
+
+
+
+
+  <footer class="my-footer bg-dark">
+    <div>
+      <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <p>Copyright &#169; 2023, Fazlay Rabbi</p>
+  </footer>
+
+
+  <script src="https://kit.fontawesome.com/1ac617dbbe.js" crossorigin="anonymous"></script>
+  <script>
+    const navbar = document.getElementsByClassName('navbar')[0];
+    let scrolled = true;
+
+    onscroll = () => {
+      if(pageYOffset > 100) {
+        navbar.classList.remove('transp');
+        if(scrolled) {
+          navbar.style.transform = 'translateY(-75px)';
+        }
+        setTimeout(() => {
+          navbar.style.transform = 'translateY(0)';
+          scrolled = false;
+        }, 300)
+      }
+      else {
+        navbar.classList.add('transp');
+        scrolled = true;
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+

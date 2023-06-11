@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | EdgeLedger | Top Financial Service Provider</title>
+  <link rel="shortcut icon" href="img/Cherry-Cake.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/utility.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <header id="main-header" class="blog">
+    <div class="navbar">
+      <h1 class="logo">
+        <a href="index.html">
+          <span class="text-primary"><i class="fa-brands fa-gg-circle"></i> Edge</span>Ledger
+        </a>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#cases">Cases</a></li>
+          <li><a href="index.html#blog">Blog</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <div id="home" class="content">
+      <h1>Blog</h1>
+    </div>
+  </header>
+
+  <section class="blog-section blog-bg">
+    <div class="padding1">
+      <img src="img/blog/blog1.jpg" alt="blog image">
+      <div class="align-1">
+        <h1 class="lg-heading">Importance of green sky</h1>
+        <p>
+          <i class="fas fa-user"></i>
+          Posted by <strong>Rahim Mia</strong> | 10th June 2023
+        </p>
+      </div>
+      <p class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, iure dolorem! Sunt id unde quis et alias quaerat, itaque molestias ducimus corrupti quia quibusdam iure libero, necessitatibus officia quidem excepturi iste ea omnis dolore possimus saepe. Ipsum delectus facilis quibusdam consectetur necessitatibus enim, sed vitae, deleniti perferendis cumque exercitationem aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste atque autem nostrum earum suscipit quas repudiandae asperiores pariatur et numquam tenetur recusandae hic, dolore ipsa excepturi officia id rem odio! Libero animi, nemo, in deserunt enim sunt dolor dicta maiores reiciendis totam beatae vero culpa quisquam! Repellat tenetur quos tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dignissimos expedita tempore similique molestiae quo totam dolore vel corrupti, qui et consequatur error perferendis nostrum, deserunt illum rerum reiciendis! Magnam recusandae aperiam repudiandae quo qui nulla repellendus non sapiente aliquid tempore ad voluptates, laboriosam corrupti modi cum rerum cupiditate exercitationem saepe. Minus dolores modi minima sint magni ipsa placeat itaque, veritatis eveniet iure error recusandae! Minima pariatur velit dolor autem odio nihil sint unde consectetur quam dolore aliquid odit est officia amet commodi recusandae, quisquam quos iusto rem fugit consequatur dicta accusantium ipsa! Quas id cupiditate doloribus aperiam aliquid quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, laudantium iste ipsam consectetur cumque consequuntur, explicabo, deleniti quos dicta accusantium ex maxime eaque ab amet non veritatis id exercitationem molestias sint nesciunt magni tenetur. Consequatur quisquam id soluta laborum molestiae similique ad, ab accusantium molestias animi recusandae repellendus aliquid sit.</p>
+    </div>
+  </section>
+
+
+
+
+  <footer class="my-footer bg-dark">
+    <div>
+      <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <p>Copyright &#169; 2023, Fazlay Rabbi</p>
+  </footer>
+
+
+  <script src="https://kit.fontawesome.com/1ac617dbbe.js" crossorigin="anonymous"></script>
+  <script>
+    const navbar = document.getElementsByClassName('navbar')[0];
+    let scrolled = true;
+
+    onscroll = () => {
+      if(pageYOffset > 100) {
+        navbar.classList.remove('transp');
+        if(scrolled) {
+          navbar.style.transform = 'translateY(-75px)';
+        }
+        setTimeout(() => {
+          navbar.style.transform = 'translateY(0)';
+          scrolled = false;
+        }, 300)
+      }
+      else {
+        navbar.classList.add('transp');
+        scrolled = true;
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
